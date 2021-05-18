@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CoreCompany" max_length="40" name="u_corecompany" type="collection">
+        <element label="city" max_length="40" name="u_city" type="string"/>
+        <element label="name" max_length="40" name="u_name" type="string"/>
+        <element display="true" label="phone" max_length="40" name="u_phone" type="string"/>
+        <element label="state" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

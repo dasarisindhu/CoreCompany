@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <client_script><![CDATA[api.controller= function ($scope, $http) {
+	
+var c = this;
+
+c.submit = function(userData){
+	
+$http({
+
+method: 'POST',
+
+url: '/api/601941/displaydetails',
+
+data : userData
+
+})
+	.then(function success(response) {
+
+ console.log(response);
+ $scope.msg="inserted successfully";
+
+}, function error(response) {
+
+// this function will be called when the request returned error status
+	console.log(response.message);
+	$scope.msg="insertion failed";
+});
+	
+}
+
+
+};
+
+
+]]></client_script>
         <controller_as>c</controller_as>
         <css/>
         <data_table>sp_instance</data_table>
@@ -23,24 +56,28 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-18 13:17:13</sys_created_on>
         <sys_id>d2ffa8c82f10301095ef50492799b65c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Insert User Record</sys_name>
         <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
         <sys_policy/>
         <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
         <sys_update_name>sp_widget_d2ffa8c82f10301095ef50492799b65c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-18 13:32:05</sys_updated_on>
+        <sys_updated_on>2021-05-18 14:16:21</sys_updated_on>
         <template><![CDATA[<div>
 <!-- your widget template -->
   <form>
-   Name : <input type="text" ng-model="name"><br><br>
-  Location : <input type="text" ng-model="location"><br><br>
-  Phone : <input type="text" ng-model="phone"><br><br>
-  <button ng-click=c.insert(name,location,phone)>
-    insert
+  Name : <input type="text" ng-model="c.data.user.name"><br><br>
+  City : <input type="text" ng-model="c.data.user.city"><br><br>
+  State : <input type="text" ng-model="c.data.user.state"><br><br>
+  Phone : <input type="text" ng-model="c.data.user.phone"><br><br>
+  <button ng-click=c.submit(c.data.user)>
+    submit
   </button>
   </form>
+  <h6>
+    {{msg}}
+  </h6>
 
 </div>]]></template>
     </sp_widget>
