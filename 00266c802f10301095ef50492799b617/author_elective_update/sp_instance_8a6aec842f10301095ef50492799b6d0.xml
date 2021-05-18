@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>info</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">2f5ae0c42f10301095ef50492799b660</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 12:52:54</sys_created_on>
+        <sys_id>8a6aec842f10301095ef50492799b6d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
+        <sys_update_name>sp_instance_8a6aec842f10301095ef50492799b6d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 13:03:52</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "https://dev81126.service-now.com/cc/?id=displayusers",
+		"displayValue": "https://dev81126.service-now.com/cc/?id=displayusers"
+	},
+	"button_text": {
+		"value": "Display",
+		"displayValue": "Display"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=8a6aec842f10301095ef50492799b6d0"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CoreCompany">00266c802f10301095ef50492799b617</application>
+        <file_path/>
+        <instance_id>4ea661c4db2bdb444c1ff70fbf9619c2</instance_id>
+        <instance_name>dev66461</instance_name>
+        <name>sp_instance_8a6aec842f10301095ef50492799b6d0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;
+    &lt;sp_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;class_name/&gt;
+        &lt;color&gt;info&lt;/color&gt;
+        &lt;css/&gt;
+        &lt;glyph/&gt;
+        &lt;id/&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;roles/&gt;
+        &lt;short_description/&gt;
+        &lt;size&gt;md&lt;/size&gt;
+        &lt;sp_column display_value="2"&gt;2f5ae0c42f10301095ef50492799b660&lt;/sp_column&gt;
+        &lt;sp_widget display_value="link-button"&gt;abc50de6d702120023c84f80de61036a&lt;/sp_widget&gt;
+        &lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-05-18 12:52:54&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;8a6aec842f10301095ef50492799b6d0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617"&gt;00266c802f10301095ef50492799b617&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="CoreCompany"&gt;00266c802f10301095ef50492799b617&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sp_instance_8a6aec842f10301095ef50492799b6d0&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-05-18 13:03:52&lt;/sys_updated_on&gt;
+        &lt;title/&gt;
+        &lt;url/&gt;
+        &lt;widget_parameters&gt;&lt;![CDATA[{
+	"href": {
+		"value": "https://dev81126.service-now.com/cc/?id=displayusers",
+		"displayValue": "https://dev81126.service-now.com/cc/?id=displayusers"
+	},
+	"button_text": {
+		"value": "Display",
+		"displayValue": "Display"
+	}
+}]]&gt;&lt;/widget_parameters&gt;
+    &lt;/sp_instance&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=8a6aec842f10301095ef50492799b6d0"/&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>648925273</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>70d9cd00075470100f22f7108c1ed027</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 15:10:16</sys_created_on>
+        <sys_id>62d90140075470100f22f7108c1ed0c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17980070de90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 15:10:16</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>eed90140725470101c1d3fbac66051c5</update_guid>
+        <update_guid_history>eed90140725470101c1d3fbac66051c5:0,9874814cfb1470102d6f433c292c4ad5:892351923,1f1cbc44a9147010407c17ac61c82d5a:648925273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3df90540075470100f22f7108c1ed01c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 15:10:45</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>8e0b0d6a3d374e28af2860aa6a4f0a40</sys_id>
+        <sys_metadata>8a6aec842f10301095ef50492799b6d0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
+        <sys_scope_delete display_value="">24e7455b534148668c678ccda935eaa4</sys_scope_delete>
+        <sys_update_name>sp_instance_8a6aec842f10301095ef50492799b6d0</sys_update_name>
+        <sys_update_version display_value="sp_instance_8a6aec842f10301095ef50492799b6d0">62d90140075470100f22f7108c1ed0c6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 15:10:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
