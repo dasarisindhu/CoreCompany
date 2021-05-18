@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>InsertUser - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="insertuser">b78860842f10301095ef50492799b652</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 12:44:50</sys_created_on>
+        <sys_id>7b8860842f10301095ef50492799b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>InsertUser - Container 1</sys_name>
+        <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
+        <sys_update_name>sp_container_7b8860842f10301095ef50492799b656</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 12:44:50</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CoreCompany">00266c802f10301095ef50492799b617</application>
+        <file_path/>
+        <instance_id>525d4242db78f70449eac5970596190b</instance_id>
+        <instance_name>dev81126</instance_name>
+        <name>sp_container_7b8860842f10301095ef50492799b656</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>InsertUser - Container 1</name><order>1</order><sp_page display_value="insertuser">b78860842f10301095ef50492799b652</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-18 12:44:50</sys_created_on><sys_id>7b8860842f10301095ef50492799b656</sys_id><sys_mod_count>0</sys_mod_count><sys_name>InsertUser - Container 1</sys_name><sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package><sys_policy/><sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope><sys_update_name>sp_container_7b8860842f10301095ef50492799b656</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-18 12:44:50</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>280091612</payload_hash>
+        <record_name>InsertUser - Container 1</record_name>
+        <reverted_from/>
+        <source>cef660402f10301095ef50492799b6ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 12:44:50</sys_created_on>
+        <sys_id>3f8860842f10301095ef50492799b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1797f81e6860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 12:44:50</sys_updated_on>
+        <type>Container</type>
+        <update_guid>778860841b1030107e5a83e006f64759</update_guid>
+        <update_guid_history>778860841b1030107e5a83e006f64759:280091612</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="InsertUser - Container 1">52d8ac442f10301095ef50492799b6ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 12:46:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>39a7c801a2ea4628a44069f9603e75a4</sys_id>
+        <sys_metadata>7b8860842f10301095ef50492799b656</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>InsertUser - Container 1</sys_name>
+        <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
+        <sys_scope_delete display_value="">24e7455b534148668c678ccda935eaa4</sys_scope_delete>
+        <sys_update_name>sp_container_7b8860842f10301095ef50492799b656</sys_update_name>
+        <sys_update_version display_value="sp_container_7b8860842f10301095ef50492799b656">3f8860842f10301095ef50492799b659</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 12:46:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
