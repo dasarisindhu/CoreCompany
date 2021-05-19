@@ -4,10 +4,12 @@
         <client_script><![CDATA[api.controller=function($scope) {
   /* widget controller */
   var c = this;
-	
 	c.showRecords = function()
 	{
-		console.log("hello")
+		if(c.name == "desc")
+			c.orderName = "-" + "name";
+		else
+			c.orderName = "name";
 		$scope.data.display = true;
 		c.server.update();
 	}
@@ -15,7 +17,27 @@
 
 ]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>td,th
+{
+  padding : 10px;
+  border-radius : 5px;
+}
+
+th
+{
+  text-align : center;
+}
+
+input
+{
+  margin : 5px;
+}
+
+button
+{
+  margin-bottom : 15px;
+}
+</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -35,12 +57,24 @@
 	
 	if(input)
 		{
+			
 			var cnt = 10;
 			data.table = {
 				list : []
 			}
 			var gr = new GlideRecord("core_company");
-			gr.addEncodedQuery('nameISNOTEMPTY^phoneISNOTEMPTY^cityISNOTEMPTY^stateISNOTEMPTY');
+			if(input.name)
+				gr.addQuery('name', input.name);
+			else
+				{
+			if(input.city)
+				gr.addQuery('city', input.city);
+			if(input.state)
+			gr.addQuery('state', input.state);
+			
+			if (!input.city && !input.state)
+				gr.addEncodedQuery('nameISNOTEMPTY^phoneISNOTEMPTY^cityISNOTEMPTY^stateISNOTEMPTY');
+				}
 			gr.query();
 			while(gr.next() && cnt--)
 				{
@@ -58,25 +92,40 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-18 14:47:13</sys_created_on>
         <sys_id>4594054c071470100f22f7108c1ed0a2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Show Records</sys_name>
         <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
         <sys_policy/>
         <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
         <sys_update_name>sp_widget_4594054c071470100f22f7108c1ed0a2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-18 14:50:20</sys_updated_on>
+        <sys_updated_on>2021-05-19 05:28:22</sys_updated_on>
         <template><![CDATA[<div>
+  <h3>
+    Add Filter
+  </h3>
+  Name : <input type="text" ng-model = "c.data.name">
+  City : <input type="text" ng-model = "c.data.city">
+  State : <input type="text" ng-model = "c.data.state">
+  OrderBy : 
+  <select ng-model = "c.name">
+  <option value="asc" selected>Ascending</option>
+  <option value="desc">Descending</option>
+  </select>
+  <br><br>
 <button class="btn btn-primary" ng-click = "c.showRecords()">
-  Show
+  Show Records
   </button>
-  <table>
+</div>
+
+<div>
+  <table border="2px solid black" >
     <tr>
     <th>Name</th>
-    <th>Contact Number</th>
+    <th>Phone</th>
     <th>Address</th>
     </tr>
-    <tr ng-repeat = "item in data.table.list">
+    <tr ng-repeat = "item in data.table.list | orderBy : c.orderName">
       <td>{{item.name}}</td>
       <td>{{item.phone}}</td>
       <td>{{item.address}}</td>
