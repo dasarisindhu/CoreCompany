@@ -19,7 +19,8 @@ data : userData
 	.then(function success(response) {
 
  console.log(response);
- $scope.msg="inserted successfully";
+ $scope.msg=response.data.result.msg;
+ $scope.code=response.status;
 
 }, function error(response) {
 
@@ -28,6 +29,21 @@ data : userData
 	$scope.msg="insertion failed";
 });
 	
+}
+	
+c.update =function(userData){
+	$http({
+		method: 'PUT',
+		url : '/api/601941/insert_user/put',
+		data : userData
+	})
+	.then(function success(response){
+		console.log(response);
+		$scope.m=response.data.result.msg;
+		$scope.hide=true;
+	}, function error(response){
+		 $scope.m = "updation failed";
+	});
 }
 
 
@@ -56,28 +72,44 @@ data : userData
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-18 13:17:13</sys_created_on>
         <sys_id>d2ffa8c82f10301095ef50492799b65c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Insert User Record</sys_name>
         <sys_package display_value="CoreCompany" source="00266c802f10301095ef50492799b617">00266c802f10301095ef50492799b617</sys_package>
         <sys_policy/>
         <sys_scope display_value="CoreCompany">00266c802f10301095ef50492799b617</sys_scope>
         <sys_update_name>sp_widget_d2ffa8c82f10301095ef50492799b65c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-18 14:50:57</sys_updated_on>
-        <template><![CDATA[<div>
+        <sys_updated_on>2021-05-19 04:02:03</sys_updated_on>
+        <template><![CDATA[<div style="text-align:center;">
 <!-- your widget template -->
   <form>
-  Name : <input type="text" ng-model="c.data.user.name"><br><br>
+  Name : <input type="text" ng-model="c.data.user.name" required><br><br>
   City : <input type="text" ng-model="c.data.user.city"><br><br>
   State : <input type="text" ng-model="c.data.user.state"><br><br>
   Phone : <input type="text" ng-model="c.data.user.phone"><br><br>
+  </form>
   <button ng-click=c.submit(c.data.user)>
     submit
   </button>
-  </form>
-  <h4>
+    <button onclick="location.reload();">
+    cancel
+    </button>
+ <div ng-hide="hide">
+   <h4>
     {{msg}}
   </h4>
+  
+  <div ng-if="code=='201'">
+    <button ng-click=c.update(c.data.user)>
+      update
+    </button>
+  </div>
+ </div>
+  <h4>
+   {{m}}
+   
+  </h4>
+
 
 </div>]]></template>
     </sp_widget>
